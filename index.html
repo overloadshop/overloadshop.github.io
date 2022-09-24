@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		 ul{/*设置导航栏的框框*/
+		 	margin: 30px auto;/*框框整体的位置，30px是指离网页的顶部和下部的距离，auto控制的是左右距离为自动调节*/
+			width: 603px;/*框框的宽度*/
+			height: 50px;/*框框的长度*/
+			padding: 0px;/*将框框的padding设置为零，不然会导致框框里的内容与框边缘有间隔*/
+			border:1px solid #000;/*添加边框*/
+		}
+		li{
+			list-style-type: none;/* 去掉li前的点 */
+			float: left;/*将li设置成做浮动，变为联动*/
+		}
+		a{
+			display: block;/*将a变成块状*/
+			width: 100px;/*设置块的宽度*/
+			height: 47px;/*设置块的长度*/
+			font-family: Microsoft Yahei;
+			line-height: 50px;/*设置字体在块中的高度*/
+			background-color: #aaa;
+			margin: 0px 0px;/*块里的高宽通过margin设置*/
+			color: #fff;
+			text-align: center;/*字体居中*/
+			text-decoration: none;/*去掉下划线*/
+			font-size: 15px;
+		}
+		a:hover{
+			background-color: #FFFACD;/*鼠标点击后显示的颜色*/
+		}
+	</style>
+</head>
+<body>
+ 	<div >
+        <!-- ul标签定义的是表格当中无序列表，表格当中的无序列表都是在<ul>标签之中，无序列表都是和<li>标签在一起使用的。 a是连接标签。-->
+		<ul class="daohang">
+			<li><a href="">首页</a></li>
+			<li><a href="">文件查询</a></li>
+			<li><a href="">编辑资料</a></li>
+			<li><a href="">选择项目</a></li>
+			<li><a href="">查看文档</a></li>
+			<li><a href="">官方文档</a></li>
+		</ul>
+	</div>
+</body>
+</html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        .imgBox{
+            border-top: 2px solid cadetblue;
+            width: 100%;
+            height: 250px;
+            margin: 0 auto;
+
+        }
+
+        .imgBox img{
+            width: 50%;
+            height: 550px;
+            margin: 0 auto;
+            padding-top: 30px;
+
+        }
+
+        .img1{
+            display: block;
+        }
+
+        .img2{
+            display: none;
+        }
+
+        .img3{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<p>文件下载</p>
+<div class="imgBox">
+    <img class="img-slide img1" src="lswlgzs.jpg" alt="1">
+    <img class="img-slide img2" src="hhzzz.jpg" alt="2">
+</div>
+</body>
+<script type="text/javascript">
+    var index=0;
+    //效果
+    function ChangeImg() {
+        index++;
+        var a=document.getElementsByClassName("img-slide");
+        if(index>=a.length) index=0;
+        for(var i=0;i<a.length;i++){
+            a[i].style.display='none';
+        }
+        a[index].style.display='block';
+    }
+    //设置定时器，每隔5秒切换一张图片
+    setInterval(ChangeImg,7500);
+</script>
+</html>
+
+
+</html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>超载的乐章-火花浏览器-Mobile</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link href="css/icons-extra.css" rel="stylesheet"/>
+    <style type="text/css">
+        body{background-color:#EFEFF4;}
+    </style>
+</head>
+<body>
+
+
+
+
+
+		<div id="自由面板1" class="mui-input-row" tag="自由面板" style="margin:325px 0px 0px 790px;display:-webkit-flex;width:100%;height:138px;">
+		<div class="mui-input-row" style="margin:0px 0px -5px 0px;text-align:center;display:block;left:10px;top:10px;width:75px;height:75px;position:absolute;">
+			<img id="图片框1" style="width:100%;height:100%;" src="images/4cdf02405dfa9d84.png" />
+		</div>
+
+		<div class="mui-input-row" style="margin:0px;display:block;left:100px;top:10px;width:197px;height:25px;position:absolute;">
+			<label id="名称" style="width:100%;color:#000000;font-size:20px;margin:0px 16px 16px 16px;padding:0px;text-align:left">火花浏览器-Mobile</label>
+		</div>
+
+		<div class="mui-input-row" style="margin:0px;display:block;left:100px;top:65px;width:60px;height:14px;position:absolute;">
+			<label id="系统工具" style="width:100%;color:#000000;font-size:14px;margin:0px 0px 0px 0px;padding:0px;text-align:left">浏览器</label>
+		</div>
+
+		<div class="mui-input-row" style="margin:0px;display:block;left:170px;top:65px;width:60px;height:14px;position:absolute;">
+			<label id="安装包大小" style="width:100%;color:#000000;font-size:14px;margin:0px 0px 0px 0px;padding:0px;text-align:left">1.80 MB</label>
+		</div>
+
+		<div class="mui-input-row" style="margin:0px;display:block;left:240px;top:65px;width:80px;height:14px;position:absolute;">
+			<label id="安卓版本" style="width:100%;color:#000000;font-size:14px;margin:0px 0px 0px 0px;padding:0px;text-align:left">安卓、鸿蒙</label>
+		</div>
+                                <div align="center" style="position:relative;top:90px;width:350px">
+                                                <a href="apk\" download="火花浏览器-Mobile.apk">点击下载</a>
+                                </div>
+	</div>
+
+</body>
+<script src="js/mui.min.js"></script>
+<script src="js/bluebird_window.js"></script>
+<script src="js/bluebird_lable.js"></script>
+<script src="js/bluebird_freedomPanel.js"></script>
+<script src="js/bluebird_imageBox.js"></script>
+<script src="js/bluebird_button.js"></script>
+<script src="index.js"></script>
+</html>
